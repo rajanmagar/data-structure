@@ -24,10 +24,13 @@ app.appendChild(p);
 for (let i = 0; i < word.length; i++) {
   rword += stack.pop();
 }
+
 let reverse = document.createElement("p");
 reverse.innerText = `Reverse Word: ${rword}`;
 app.appendChild(reverse);
+
 let result = document.createElement("b");
+
 rword === word
   ? (result.innerText = `${word} is palindrome.`)
   : (result.innerText = `${word} is not palidrome.`);
